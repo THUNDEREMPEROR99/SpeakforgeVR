@@ -1,0 +1,9 @@
+{
+  "name": "SpeakForgeVR",
+  "description": "A high-fidelity VR interview simulator for Meta Quest 3 featuring voice-to-text input and AI performance evaluation.",
+  "requestFramePermissions": [
+    "microphone",
+    "xr-spatial-tracking"
+  ],
+  "majorCapabilities": []
+}

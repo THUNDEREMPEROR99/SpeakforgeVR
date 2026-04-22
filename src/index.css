@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-immersive-bg: #020617;
+  --color-immersive-dark: #1e1b4b;
+  --color-cyan-vibrant: #22d3ee;
+}
+
+@layer utilities {
+  .immersive-bg {
+    background: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #020617 100%);
+  }
+
+  .glass-panel {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+  }
+
+  .tracking-widest-extra {
+    letter-spacing: 0.3em;
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
